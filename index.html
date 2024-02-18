@@ -11,758 +11,879 @@
         gtag('config', 'G-PML6PX5TH8');
     </script>
     <meta charset="UTF-8">
-    <title>Enter Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Biodata</title>
     <style>
-        /* Label styles */
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
-
-        /* Text input styles */
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
+        .sidebar {
+            background-color: #fff;
+            color: #333;
+            height: 100vh;
+            width: 20%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            /* overflow-y: auto; */
+            padding: 20px;
         }
-
-        /* Select box styles */
-        select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-            appearance: none;
-            /* removes default styling for select */
-            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23838b8d'><path d='M6 8l4-4 4 4z'/></svg>");
-            /* adds custom arrow icon */
-            background-position: right 10px center;
-            background-repeat: no-repeat;
-            background-size: 10px 10px;
+        .content {
+            margin-left: 20%; /* Same width as sidebar */
+            padding: 20px;
         }
-
-        /* Checkbox styles */
-        input[type="checkbox"] {
-            margin-right: 5px;
+        .section1 {
+            /* background-image: url('background-image.jpg'); */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-
-        /* Radio button styles */
-        input[type="radio"] {
-            margin-right: 5px;
-        }
-
-        /* File input styles */
-        input[type="file"] {
-            margin-bottom: 15px;
-        }
-
-        /* Button styles */
-        button {
-            background-color: #4CAF50;
+        .header-section {
             color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 10px;
-        }
+            text-align: center;
+            
+            button {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
 
-        button:hover {
-            background-color: #3e8e41;
+            button:hover {
+                background-color: #fff;
+                border-color: #333;
+                border: 2px solid #333;
+                color: #333;
+            }
         }
+        .section2 {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            font-size: xx-large;
+        }
+        .section2 .left {
+            flex: 1;
+            padding-right: 20px;
+            width: 50%;
+        }
+        .section2 .right {
+            flex: 1;
+            width: 50%;
+        }
+        .form-section {
+            padding: 20px 0;
+        }
+        /* Add more styling as needed */
+        .form-section .container-fluid {
+            /* Label styles */
+            float: right;
+            width: 98%;
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
 
-        /* Preview image styles */
-        #preview {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-bottom: 15px;
+            /* Text input styles */
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+            }
+
+            /* Select box styles */
+            select {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 16px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                appearance: none;
+                /* removes default styling for select */
+                background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23838b8d'><path d='M6 8l4-4 4 4z'/></svg>");
+                /* adds custom arrow icon */
+                background-position: right 10px center;
+                background-repeat: no-repeat;
+                background-size: 10px 10px;
+            }
+
+            /* Checkbox styles */
+            input[type="checkbox"] {
+                margin-right: 5px;
+            }
+
+            /* Radio button styles */
+            input[type="radio"] {
+                margin-right: 5px;
+            }
+
+            /* File input styles */
+            input[type="file"] {
+                margin-bottom: 15px;
+            }
+
+            /* Button styles */
+            button {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+
+            button:hover {
+                background-color: #fff;
+                border-color: #333;
+                border: 2px solid #333;
+                color: #333;
+            }
+
+            /* Preview image styles */
+            #preview {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 15px;
+            }
+
+            .form-container {
+                width: 50%;
+                float: left;
+            }
+
+            .pdf-container {
+                width: 50%;
+                float: right;
+            }
+
+            .form-control {
+                margin-bottom: 10px;
+            }
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
-        integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <style>
-        .form-container {
-            width: 50%;
-            float: left;
-        }
-
-        .pdf-container {
-            width: 50%;
-            float: right;
-        }
-
-        .form-control {
-            margin-bottom: 10px;
-        }
-    </style>
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+    integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-
 <body>
-    <div class="container-fluid text-center">
-        <br>
-        <h1>Indian Biodata Creator</h1>
-        <div class=">
-            <div class="col-12 form-container">
-                <form id="biodataForm"><br>
-                    <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-1">
-                            <!-- <label for="salutation" class="form-control-sm">Salutation:</label> -->
-                            <select id="salutation" class="form-control-md text-end" name="salutation">
-                                <option value="">Salutation</option>
-                                <option value="Mr">Mr</option>
-                                <option value="Ms">Ms</option>
-                                <option value="Mrs">Mrs</option>
-                            </select>
-                        </div>
-                        <div class="col-9">
-                            <!-- <label for="name" class="form-control-sm">Name:</label> -->
-                            <input type="text" id="name" class="form-control-sm" name="name">
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="fatherName" class="form-control-sm">Father's Name</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="fatherName" class="form-control-sm" name="fatherName">
-                        </div>
-                    </div>
+<div class="sidebar">
+    <div class="section1">
+        <div class="centered-content">
+            <span><h1>Indian Biodata</h1></span>
+        </div>
+    </div>
+</div>
 
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="fatherOccupation" class="form-control-sm">Father's Occupation</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="fatherOccupation" class="form-control-sm" name="fatherOccupation"><br>
-                        </div>
-                    </div>
+<div class="content">
+    
+    <div class="section1 header-section" style="background-image: url('./img/section1.webp');">
+        <h1>Generate Simple and on-point Indian bio data</h1>
+        <h1>for free | Biodata for Shaadi</h1>
+        <p>No Signup - No Bio Data details Stored - Hence No Spam</p>
+        <button class="form-control-lg" onclick="scrollToForm()">ENTER DETAILS AND DOWNLOAD PDF</button>
+    </div>
 
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="motherName" class="form-control-sm">Mother's Name</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="motherName" class="form-control-sm" name="motherName"><br>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="motherOccupation" class="form-control-sm">Mother's Occupation</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="motherOccupation" class="form-control-sm" name="motherOccupation"><br>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="dob" class="form-control-sm">Birth Date</label>
-                        </div>
-                        <div class="col-3 text-start">
-                            <input type="date" id="dob" class="form-control-md" name="dob" style="width: -webkit-fill-available;"><br>
-                        </div>
-                        <div class="col-3 text-end">
-                            <label for="timeOfBirth" class="form-control-sm">Time</label>
-                        </div>
-                        <div class="col-3 text-end">
-                            <input type="time" id="timeOfBirth" class="form-control-md" name="timeOfBirth" style="width: -webkit-fill-available;"><br>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="placeOfBirth" class="form-control-sm">Birth Place</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="placeOfBirth" class="form-control-sm" name="placeOfBirth">
-                        </div>
-                    </div><br>
-                    
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="mobileNo" class="form-control-sm text-right">Mobile</label>
-                        </div>
-                        <div class="col-9 text-start">
-                            <input type="tel" id="mobileNo" class="form-control-sm" name="mobileNo" style="width: -webkit-fill-available;">
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="email" class="form-control-sm">Email</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="email" id="email" class="form-control-sm" name="email"><br>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="address" class="form-control-sm">Address</label>
-                        </div>
-                        <div class="col-9">
-                            <textarea id="address" class="form-control-sm" name="address"></textarea><br>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="caste" class="form-control-sm">Caste</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="caste" class="form-control-sm" name="caste"><br>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="patrilinealGotra" class="form-control-sm">Patrilineal Gotra</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="patrilinealGotra" class="form-control-sm" name="patrilinealGotra"><br>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="matrilinealGotra" class="form-control-sm">Matrilineal Gotra</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="matrilinealGotra" class="form-control-sm" name="matrilinealGotra"><br>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="manglik" class="form-control-sm">Manglik</label>
-                        </div>
-                        <div class="col-9">
-                            <select id="manglik" class="form-control-md" name="manglik">
-                                <option value="">--Please choose an option--</option>
-                                <option value="Manglik">Manglik</option>
-                                <option value="Non Manglik">Non Manglik</option>
-                                <option value="Don't Know">Don't Know</option>
-                            </select>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="languagesKnown" class="form-control-sm">Language Known</label>
-                        </div>
-                        <div class="col-9">
-                            <select id="languagesKnown" class="form-control-md" name="languagesKnown" multiple>
-                                <option value=""></option>
-                                <option value="Hindi">Hindi</option>
-                                <option value="English">English</option>
-                                <option value="Mewari">Mewari</option>
-                                <option value="Marwadi">Marwadi</option>
-                                <option value="Marathi">Marathi</option>
-                                <option value="Oriya">Oriya</option>
-                                <option value="Punjabi">Punjabi</option>
-                                <option value="Sanskrit">Sanskrit</option>
-                                <option value="Sindhi">Sindhi</option>
-                                <option value="Tamil">Tamil</option>
-                                <option value="Telugu">Telugu</option>
-                                <option value="Urdu">Urdu</option>
-                            </select>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="height" class="form-control-sm">Height</label>
-                        </div>
-                        <div class="col-9">
-                            <select id="height" class="form-control-md" name="height">
-                                <option value="">--Please choose an option--</option>
-                                <option value="4.0">4' 0"</option>
-                                <option value="4.1">4' 1"</option>
-                                <option value="4.2">4' 2"</option>
-                                <option value="4.3">4' 3"</option>
-                                <option value="4.4">4' 4"</option>
-                                <option value="4.5">4' 5"</option>
-                                <option value="4.6">4' 6"</option>
-                                <option value="4.7">4' 7"</option>
-                                <option value="4.8">4' 8"</option>
-                                <option value="4.9">4' 9"</option>
-                                <option value="4.10">4' 10"</option>
-                                <option value="4.11">4' 11"</option>
-                                <option value="5.0">5' 0"</option>
-                                <option value="5.1">5' 1"</option>
-                                <option value="5.2">5' 2"</option>
-                                <option value="5.3">5' 3"</option>
-                                <option value="5.4">5' 4"</option>
-                                <option value="5.5">5' 5"</option>
-                                <option value="5.6">5' 6"</option>
-                                <option value="5.7">5' 7"</option>
-                                <option value="5.8">5' 8"</option>
-                                <option value="5.9">5' 9"</option>
-                                <option value="5.10">5' 10"</option>
-                                <option value="5.11">5' 11"</option>
-                                <option value="6.0">6' 0"</option>
-                                <option value="6.1">6' 1"</option>
-                                <option value="6.2">6' 2"</option>
-                                <option value="6.3">6' 3"</option>
-                                <option value="6.4">6' 4"</option>
-                                <option value="6.5">6' 5"</option>
-                                <option value="6.6">6' 6"</option>
-                                <option value="6.7">6' 7"</option>
-                                <option value="6.8">6' 8"</option>
-                                <option value="6.9">6' 9"</option>
-                                <option value="6.10">6' 10"</option>
-                                <option value="6.11">6' 11"</option>
-                            </select>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end"> 
-                            <label for="weight" class="form-control-sm">Weight</label>
-                        </div>
-                        <div class="col-9">
-                            <select id="weight" class="form-control-md" name="weight">
-                                <option value="">--Please choose an option--</option>
-                                <option value="32">32 kg</option>
-                                <option value="33">33 kg</option>
-                                <option value="34">34 kg</option>
-                                <option value="35">35 kg</option>
-                                <option value="36">36 kg</option>
-                                <option value="37">37 kg</option>
-                                <option value="38">38 kg</option>
-                                <option value="39">39 kg</option>
-                                <option value="40">40 kg</option>
-                                <option value="41">41 kg</option>
-                                <option value="42">42 kg</option>
-                                <option value="43">43 kg</option>
-                                <option value="44">44 kg</option>
-                                <option value="45">45 kg</option>
-                                <option value="46">46 kg</option>
-                                <option value="47">47 kg</option>
-                                <option value="48">48 kg</option>
-                                <option value="49">49 kg</option>
-                                <option value="50">50 kg</option>
-                                <option value="51">51 kg</option>
-                                <option value="52">52 kg</option>
-                                <option value="53">53 kg</option>
-                                <option value="54">54 kg</option>
-                                <option value="55">55 kg</option>
-                                <option value="56">56 kg</option>
-                                <option value="57">57 kg</option>
-                                <option value="58">58 kg</option>
-                                <option value="59">59 kg</option>
-                                <option value="60">60 kg</option>
-                                <option value="61">61 kg</option>
-                                <option value="62">62 kg</option>
-                                <option value="63">63 kg</option>
-                                <option value="64">64 kg</option>
-                                <option value="65">65 kg</option>
-                                <option value="66">66 kg</option>
-                                <option value="67">67 kg</option>
-                                <option value="68">68 kg</option>
-                                <option value="69">69 kg</option>
-                                <option value="70">70 kg</option>
-                                <option value="71">71 kg</option>
-                                <option value="72">72 kg</option>
-                                <option value="73">73 kg</option>
-                                <option value="74">74 kg</option>
-                                <option value="75">75 kg</option>
-                                <option value="76">76 kg</option>
-                                <option value="77">77 kg</option>
-                                <option value="78">78 kg</option>
-                                <option value="79">79 kg</option>
-                                <option value="80">80 kg</option>
-                                <option value="81">81 kg</option>
-                                <option value="82">82 kg</option>
-                                <option value="83">83 kg</option>
-                                <option value="84">84 kg</option>
-                                <option value="85">85 kg</option>
-                                <option value="86">86 kg</option>
-                                <option value="87">87 kg</option>
-                                <option value="88">88 kg</option>
-                                <option value="89">89 kg</option>
-                                <option value="90">90 kg</option>
-                                <option value="91">91 kg</option>
-                                <option value="92">92 kg</option>
-                                <option value="93">93 kg</option>
-                                <option value="94">94 kg</option>
-                                <option value="95">95 kg</option>
-                                <option value="96">96 kg</option>
-                                <option value="97">97 kg</option>
-                                <option value="98">98 kg</option>
-                                <option value="99">99 kg</option>
-                                <option value="100">100 kg</option>
-                                <option value="101">101 kg</option>
-                                <option value="102">102 kg</option>
-                                <option value="103">103 kg</option>
-                                <option value="104">104 kg</option>
-                                <option value="105">105 kg</option>
-                                <option value="106">106 kg</option>
-                                <option value="107">107 kg</option>
-                                <option value="108">108 kg</option>
-                                <option value="109">109 kg</option>
-                                <option value="110">110 kg</option>
-                                <option value="111">111 kg</option>
-                                <option value="112">112 kg</option>
-                                <option value="113">113 kg</option>
-                                <option value="114">114 kg</option>
-                                <option value="115">115 kg</option>
-                                <option value="116">116 kg</option>
-                                <option value="117">117 kg</option>
-                                <option value="118">118 kg</option>
-                                <option value="119">119 kg</option>
-                                <option value="120">120 kg</option>
-                                <option value="121">121 kg</option>
-                                <option value="122">122 kg</option>
-                                <option value="123">123 kg</option>
-                                <option value="124">124 kg</option>
-                                <option value="125">125 kg</option>
-                                <option value="126">126 kg</option>
-                                <option value="127">127 kg</option>
-                                <option value="128">128 kg</option>
-                                <option value="129">129 kg</option>
-                                <option value="130">130 kg</option>
-                                <option value="131">131 kg</option>
-                                <option value="132">132 kg</option>
-                                <option value="133">133 kg</option>
-                                <option value="134">134 kg</option>
-                                <option value="135">135 kg</option>
-                                <option value="136">136 kg</option>
-                                <option value="137">137 kg</option>
-                                <option value="138">138 kg</option>
-                                <option value="139">139 kg</option>
-                                <option value="140">140 kg</option>
-                                <option value="141">141 kg</option>
-                                <option value="142">142 kg</option>
-                                <option value="143">143 kg</option>
-                                <option value="144">144 kg</option>
-                                <option value="145">145 kg</option>
-                                <option value="146">146 kg</option>
-                                <option value="147">147 kg</option>
-                                <option value="148">148 kg</option>
-                                <option value="149">149 kg</option>
-                                <option value="150">150 kg</option>
-                            </select>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="complexion" class="form-control-md">Complexion</label>
-                        </div>
-                        <div class="col-9">
-                            <select id="complexion" class="form-control-md" name="complexion">
-                                <option value="">--Please choose an option--</option>
-                                <option value="Very Fair">Very Fair</option>
-                                <option value="Fair">Fair</option>
-                                <option value="Wheatish">Wheatish</option>
-                                <option value="Wheatish Brown">Wheatish Brown</option>
-                                <option value="Dark">Dark</option>
-                            </select>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="qualification" class="form-control-sm">Qualification</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="qualification" class="form-control-sm" name="qualification"><br>
-                        </div>
-                    </div><br>
-                    
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="occupation" class="form-control-sm">Occupation</label>
-                        </div>
-                        <div class="col-9">
-                            <input type="text" id="occupation" class="form-control-sm" name="occupation"><br>
-                        </div>
-                    </div><br>
-                    
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="siblingsDetail" class="form-control-sm">Siblings Details</label>
-                        </div>
-                        <div class="col-9">
-                            <textarea id="siblingsDetail" class="form-control-sm" name="siblingsDetail"></textarea><br>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="hobbies" class="form-control-sm">Hobbies</label>
-                        </div>
-                        <div class="col-9">
-                            <select id="hobbies" class="form-control-md" name="hobbies" multiple>
-                                <option value="Cricket">Cricket</option>
-                                <option value="Football">Football</option>
-                                <option value="Badminton">Badminton</option>
-                                <option value="Swimming">Swimming</option>
-                                <option value="Reading">Reading</option>
-                                <option value="Travelling">Travelling</option>
-                                <option value="Music">Music</option>
-                                <option value="Dancing">Dancing</option>
-                                <option value="Singing">Singing</option>
-                                <option value="Cooking">Cooking</option>
-                                <option value="Painting">Painting</option>
-                                <option value="Photography">Photography</option>
-                                <option value="Gardening">Gardening</option>
-                                <option value="Writing">Writing</option>
-                                <option value="Others">Others</option>
-                            </select>
-                        </div>
-                    </div><br>
-                    
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="photo" class="form-control-sm">Photo</label>
-                        </div>
-                        <div class="col-3 text-start">
-                            <input type="file" id="photo" class="form-control-sm" name="photo" accept="image/*" onchange="previewFile()">
-                        </div>
-                    </div><br>
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="photoPreview" class="form-control-sm">Photo Preview</label>
-                        </div>
-                        <div class="col-9 text-start">
-                            <img id="photoPreview" src="" alt="Photo Preview" style="max-width:100px;">
-                            <br>
-                            <br>
-                        </div>
-                    </div><br>
-                    
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="aboutMyself" class="form-control-sm">About Myself</label>
-                        </div>
-                        <div class="col-9">
-                            <textarea id="aboutMyself" class="form-control-sm" name="aboutMyself" maxlength="250"></textarea><br>
-                        </div>
-                    </div><br>
-
-                    <div class="row">
-                        <div class="col-3 text-end">
-                            <label for="expectations" class="form-control-sm">Expectations</label>
-                        </div>
-                        <div class="col-9">
-                            <textarea id="expectations" class="form-control-sm" name="expectations" maxlength="250"></textarea><br>
-                        </div>
-                    </div>
-                    <br>
-                    <button type="submit" class="form-control-sm" onclick="storeData()">Save</button>
-                    <button type="button" class="form-control-sm" onclick="generatePDF()" id="generatePDFButton">Generate PDF</button><nbps></nbps>
-                </form>
-            </div>
-            <!-- <div class="col-3 form-container">
-                // Sidebar Advertisement 1
-            </div> -->
-            <!-- <div class="col-6 pdf-container">
-                <iframe id="pdfViewer" src="" frameborder="0" width="100%" height="100%"></iframe>
-            </div> -->
+    <div class="section2">
+        <div class="left" style="background-image: url('./img/section2.webp');">
+        </div>
+        <div class="right">
+            <ul>
+                <span><h4>WHY CHOOSE INDIAN BIODATA FOR YOUR BIODATA CREATION?</h4></span>
+                <span><p>We don't store your data.</p></span>
+                <span><h3>No Signup is needed for Biodata Generation</h3></span>
+                <span><p><strong>Come Back, No Need to enter data again</strong></p></span>
+                <span>Your data remains in your browser | No word file needed</span>
+                <span><p><strong>Affordability: It's a free service</strong></p></span>
+            </ul>
         </div>
     </div>
 
-    <script>
+    <div class="form-section" id="form-section">
+        <!-- Full form for Biodata Generation goes here -->
+        <!-- This is the core part of the website -->
+        <div class="container-fluid text-center">
+            <br>
+            <h1>Indian Biodata Creator</h1>
+            <div class=">
+                <div class="col-12 form-container">
+                    <form id="biodataForm"><br>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-1">
+                                <!-- <label for="salutation" class="form-control-sm">Salutation:</label> -->
+                                <select id="salutation" class="form-control-md text-end" name="salutation">
+                                    <option value="">Salutation</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Ms">Ms</option>
+                                    <option value="Mrs">Mrs</option>
+                                </select>
+                            </div>
+                            <div class="col-9">
+                                <!-- <label for="name" class="form-control-sm">Name:</label> -->
+                                <input type="text" id="name" class="form-control-sm" name="name">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="fatherName" class="form-control-sm">Father's Name</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="fatherName" class="form-control-sm" name="fatherName">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="fatherOccupation" class="form-control-sm">Father's Occupation</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="fatherOccupation" class="form-control-sm" name="fatherOccupation"><br>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="motherName" class="form-control-sm">Mother's Name</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="motherName" class="form-control-sm" name="motherName"><br>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="motherOccupation" class="form-control-sm">Mother's Occupation</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="motherOccupation" class="form-control-sm" name="motherOccupation"><br>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="dob" class="form-control-sm">Birth Date</label>
+                            </div>
+                            <div class="col-3 text-start">
+                                <input type="date" id="dob" class="form-control-md" name="dob" style="width: -webkit-fill-available;"><br>
+                            </div>
+                            <div class="col-3 text-end">
+                                <label for="timeOfBirth" class="form-control-sm">Time</label>
+                            </div>
+                            <div class="col-3 text-end">
+                                <input type="time" id="timeOfBirth" class="form-control-md" name="timeOfBirth" style="width: -webkit-fill-available;"><br>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="placeOfBirth" class="form-control-sm">Birth Place</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="placeOfBirth" class="form-control-sm" name="placeOfBirth">
+                            </div>
+                        </div><br>
+                        
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="mobileNo" class="form-control-sm text-right">Mobile</label>
+                            </div>
+                            <div class="col-9 text-start">
+                                <input type="tel" id="mobileNo" class="form-control-sm" name="mobileNo" style="width: -webkit-fill-available;">
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="email" class="form-control-sm">Email</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="email" id="email" class="form-control-sm" name="email"><br>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="address" class="form-control-sm">Address</label>
+                            </div>
+                            <div class="col-9">
+                                <textarea id="address" class="form-control-sm" name="address"></textarea><br>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="caste" class="form-control-sm">Caste</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="caste" class="form-control-sm" name="caste"><br>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="patrilinealGotra" class="form-control-sm">Patrilineal Gotra</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="patrilinealGotra" class="form-control-sm" name="patrilinealGotra"><br>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="matrilinealGotra" class="form-control-sm">Matrilineal Gotra</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="matrilinealGotra" class="form-control-sm" name="matrilinealGotra"><br>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="manglik" class="form-control-sm">Manglik</label>
+                            </div>
+                            <div class="col-9">
+                                <select id="manglik" class="form-control-md" name="manglik">
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="Manglik">Manglik</option>
+                                    <option value="Non Manglik">Non Manglik</option>
+                                    <option value="Don't Know">Don't Know</option>
+                                </select>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="languagesKnown" class="form-control-sm">Language Known</label>
+                            </div>
+                            <div class="col-9">
+                                <select id="languagesKnown" class="form-control-md" name="languagesKnown" multiple>
+                                    <option value=""></option>
+                                    <option value="Hindi">Hindi</option>
+                                    <option value="English">English</option>
+                                    <option value="Mewari">Mewari</option>
+                                    <option value="Marwadi">Marwadi</option>
+                                    <option value="Marathi">Marathi</option>
+                                    <option value="Oriya">Oriya</option>
+                                    <option value="Punjabi">Punjabi</option>
+                                    <option value="Sanskrit">Sanskrit</option>
+                                    <option value="Sindhi">Sindhi</option>
+                                    <option value="Tamil">Tamil</option>
+                                    <option value="Telugu">Telugu</option>
+                                    <option value="Urdu">Urdu</option>
+                                </select>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="height" class="form-control-sm">Height</label>
+                            </div>
+                            <div class="col-9">
+                                <select id="height" class="form-control-md" name="height">
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="4.0">4' 0"</option>
+                                    <option value="4.1">4' 1"</option>
+                                    <option value="4.2">4' 2"</option>
+                                    <option value="4.3">4' 3"</option>
+                                    <option value="4.4">4' 4"</option>
+                                    <option value="4.5">4' 5"</option>
+                                    <option value="4.6">4' 6"</option>
+                                    <option value="4.7">4' 7"</option>
+                                    <option value="4.8">4' 8"</option>
+                                    <option value="4.9">4' 9"</option>
+                                    <option value="4.10">4' 10"</option>
+                                    <option value="4.11">4' 11"</option>
+                                    <option value="5.0">5' 0"</option>
+                                    <option value="5.1">5' 1"</option>
+                                    <option value="5.2">5' 2"</option>
+                                    <option value="5.3">5' 3"</option>
+                                    <option value="5.4">5' 4"</option>
+                                    <option value="5.5">5' 5"</option>
+                                    <option value="5.6">5' 6"</option>
+                                    <option value="5.7">5' 7"</option>
+                                    <option value="5.8">5' 8"</option>
+                                    <option value="5.9">5' 9"</option>
+                                    <option value="5.10">5' 10"</option>
+                                    <option value="5.11">5' 11"</option>
+                                    <option value="6.0">6' 0"</option>
+                                    <option value="6.1">6' 1"</option>
+                                    <option value="6.2">6' 2"</option>
+                                    <option value="6.3">6' 3"</option>
+                                    <option value="6.4">6' 4"</option>
+                                    <option value="6.5">6' 5"</option>
+                                    <option value="6.6">6' 6"</option>
+                                    <option value="6.7">6' 7"</option>
+                                    <option value="6.8">6' 8"</option>
+                                    <option value="6.9">6' 9"</option>
+                                    <option value="6.10">6' 10"</option>
+                                    <option value="6.11">6' 11"</option>
+                                </select>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end"> 
+                                <label for="weight" class="form-control-sm">Weight</label>
+                            </div>
+                            <div class="col-9">
+                                <select id="weight" class="form-control-md" name="weight">
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="32">32 kg</option>
+                                    <option value="33">33 kg</option>
+                                    <option value="34">34 kg</option>
+                                    <option value="35">35 kg</option>
+                                    <option value="36">36 kg</option>
+                                    <option value="37">37 kg</option>
+                                    <option value="38">38 kg</option>
+                                    <option value="39">39 kg</option>
+                                    <option value="40">40 kg</option>
+                                    <option value="41">41 kg</option>
+                                    <option value="42">42 kg</option>
+                                    <option value="43">43 kg</option>
+                                    <option value="44">44 kg</option>
+                                    <option value="45">45 kg</option>
+                                    <option value="46">46 kg</option>
+                                    <option value="47">47 kg</option>
+                                    <option value="48">48 kg</option>
+                                    <option value="49">49 kg</option>
+                                    <option value="50">50 kg</option>
+                                    <option value="51">51 kg</option>
+                                    <option value="52">52 kg</option>
+                                    <option value="53">53 kg</option>
+                                    <option value="54">54 kg</option>
+                                    <option value="55">55 kg</option>
+                                    <option value="56">56 kg</option>
+                                    <option value="57">57 kg</option>
+                                    <option value="58">58 kg</option>
+                                    <option value="59">59 kg</option>
+                                    <option value="60">60 kg</option>
+                                    <option value="61">61 kg</option>
+                                    <option value="62">62 kg</option>
+                                    <option value="63">63 kg</option>
+                                    <option value="64">64 kg</option>
+                                    <option value="65">65 kg</option>
+                                    <option value="66">66 kg</option>
+                                    <option value="67">67 kg</option>
+                                    <option value="68">68 kg</option>
+                                    <option value="69">69 kg</option>
+                                    <option value="70">70 kg</option>
+                                    <option value="71">71 kg</option>
+                                    <option value="72">72 kg</option>
+                                    <option value="73">73 kg</option>
+                                    <option value="74">74 kg</option>
+                                    <option value="75">75 kg</option>
+                                    <option value="76">76 kg</option>
+                                    <option value="77">77 kg</option>
+                                    <option value="78">78 kg</option>
+                                    <option value="79">79 kg</option>
+                                    <option value="80">80 kg</option>
+                                    <option value="81">81 kg</option>
+                                    <option value="82">82 kg</option>
+                                    <option value="83">83 kg</option>
+                                    <option value="84">84 kg</option>
+                                    <option value="85">85 kg</option>
+                                    <option value="86">86 kg</option>
+                                    <option value="87">87 kg</option>
+                                    <option value="88">88 kg</option>
+                                    <option value="89">89 kg</option>
+                                    <option value="90">90 kg</option>
+                                    <option value="91">91 kg</option>
+                                    <option value="92">92 kg</option>
+                                    <option value="93">93 kg</option>
+                                    <option value="94">94 kg</option>
+                                    <option value="95">95 kg</option>
+                                    <option value="96">96 kg</option>
+                                    <option value="97">97 kg</option>
+                                    <option value="98">98 kg</option>
+                                    <option value="99">99 kg</option>
+                                    <option value="100">100 kg</option>
+                                    <option value="101">101 kg</option>
+                                    <option value="102">102 kg</option>
+                                    <option value="103">103 kg</option>
+                                    <option value="104">104 kg</option>
+                                    <option value="105">105 kg</option>
+                                    <option value="106">106 kg</option>
+                                    <option value="107">107 kg</option>
+                                    <option value="108">108 kg</option>
+                                    <option value="109">109 kg</option>
+                                    <option value="110">110 kg</option>
+                                    <option value="111">111 kg</option>
+                                    <option value="112">112 kg</option>
+                                    <option value="113">113 kg</option>
+                                    <option value="114">114 kg</option>
+                                    <option value="115">115 kg</option>
+                                    <option value="116">116 kg</option>
+                                    <option value="117">117 kg</option>
+                                    <option value="118">118 kg</option>
+                                    <option value="119">119 kg</option>
+                                    <option value="120">120 kg</option>
+                                    <option value="121">121 kg</option>
+                                    <option value="122">122 kg</option>
+                                    <option value="123">123 kg</option>
+                                    <option value="124">124 kg</option>
+                                    <option value="125">125 kg</option>
+                                    <option value="126">126 kg</option>
+                                    <option value="127">127 kg</option>
+                                    <option value="128">128 kg</option>
+                                    <option value="129">129 kg</option>
+                                    <option value="130">130 kg</option>
+                                    <option value="131">131 kg</option>
+                                    <option value="132">132 kg</option>
+                                    <option value="133">133 kg</option>
+                                    <option value="134">134 kg</option>
+                                    <option value="135">135 kg</option>
+                                    <option value="136">136 kg</option>
+                                    <option value="137">137 kg</option>
+                                    <option value="138">138 kg</option>
+                                    <option value="139">139 kg</option>
+                                    <option value="140">140 kg</option>
+                                    <option value="141">141 kg</option>
+                                    <option value="142">142 kg</option>
+                                    <option value="143">143 kg</option>
+                                    <option value="144">144 kg</option>
+                                    <option value="145">145 kg</option>
+                                    <option value="146">146 kg</option>
+                                    <option value="147">147 kg</option>
+                                    <option value="148">148 kg</option>
+                                    <option value="149">149 kg</option>
+                                    <option value="150">150 kg</option>
+                                </select>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="complexion" class="form-control-md">Complexion</label>
+                            </div>
+                            <div class="col-9">
+                                <select id="complexion" class="form-control-md" name="complexion">
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="Very Fair">Very Fair</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Wheatish">Wheatish</option>
+                                    <option value="Wheatish Brown">Wheatish Brown</option>
+                                    <option value="Dark">Dark</option>
+                                </select>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="qualification" class="form-control-sm">Qualification</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="qualification" class="form-control-sm" name="qualification"><br>
+                            </div>
+                        </div><br>
+                        
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="occupation" class="form-control-sm">Occupation</label>
+                            </div>
+                            <div class="col-9">
+                                <input type="text" id="occupation" class="form-control-sm" name="occupation"><br>
+                            </div>
+                        </div><br>
+                        
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="siblingsDetail" class="form-control-sm">Siblings Details</label>
+                            </div>
+                            <div class="col-9">
+                                <textarea id="siblingsDetail" class="form-control-sm" name="siblingsDetail"></textarea><br>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="hobbies" class="form-control-sm">Hobbies</label>
+                            </div>
+                            <div class="col-9">
+                                <select id="hobbies" class="form-control-md" name="hobbies" multiple>
+                                    <option value="Cricket">Cricket</option>
+                                    <option value="Football">Football</option>
+                                    <option value="Badminton">Badminton</option>
+                                    <option value="Swimming">Swimming</option>
+                                    <option value="Reading">Reading</option>
+                                    <option value="Travelling">Travelling</option>
+                                    <option value="Music">Music</option>
+                                    <option value="Dancing">Dancing</option>
+                                    <option value="Singing">Singing</option>
+                                    <option value="Cooking">Cooking</option>
+                                    <option value="Painting">Painting</option>
+                                    <option value="Photography">Photography</option>
+                                    <option value="Gardening">Gardening</option>
+                                    <option value="Writing">Writing</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                        </div><br>
+                        
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="photo" class="form-control-sm">Photo</label>
+                            </div>
+                            <div class="col-3 text-start">
+                                <input type="file" id="photo" class="form-control-sm" name="photo" accept="image/*" onchange="previewFile()">
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="photoPreview" class="form-control-sm">Photo Preview</label>
+                            </div>
+                            <div class="col-9 text-start">
+                                <img id="photoPreview" src="" alt="Photo Preview" style="max-width:100px;">
+                                <br>
+                                <br>
+                            </div>
+                        </div><br>
+                        
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="aboutMyself" class="form-control-sm">About Myself</label>
+                            </div>
+                            <div class="col-9">
+                                <textarea id="aboutMyself" class="form-control-sm" name="aboutMyself" maxlength="250"></textarea><br>
+                            </div>
+                        </div><br>
+    
+                        <div class="row">
+                            <div class="col-3 text-end">
+                                <label for="expectations" class="form-control-sm">Expectations</label>
+                            </div>
+                            <div class="col-9">
+                                <textarea id="expectations" class="form-control-sm" name="expectations" maxlength="250"></textarea><br>
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" class="form-control-sm" onclick="storeData()">Save</button>
+                        <button type="button" class="form-control-sm" onclick="generatePDF()" id="generatePDFButton">Generate PDF</button><nbps></nbps><br><br>
+                    </form>
+                </div>
+                <!-- <div class="col-3 form-container">
+                    // Sidebar Advertisement 1
+                </div> -->
+                <!-- <div class="col-6 pdf-container">
+                    <iframe id="pdfViewer" src="" frameborder="0" width="100%" height="100%"></iframe>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
 
-        function populate() {
-            document.getElementById("salutation").value = localStorage.getItem("salutation") || "";
-            document.getElementById("name").value = localStorage.getItem("name") || "";
-            document.getElementById("fatherName").value = localStorage.getItem("fatherName") || "";
-            document.getElementById("fatherOccupation").value = localStorage.getItem("fatherOccupation") || "";
-            document.getElementById("motherName").value = localStorage.getItem("motherName") || "";
-            document.getElementById("motherOccupation").value = localStorage.getItem("motherOccupation") || "";
-            document.getElementById("dob").value = localStorage.getItem("dob") || "";
-            document.getElementById("placeOfBirth").value = localStorage.getItem("placeOfBirth") || "";
-            document.getElementById("timeOfBirth").value = localStorage.getItem("timeOfBirth") || "";
-            document.getElementById("mobileNo").value = localStorage.getItem("mobileNo") || "";
-            document.getElementById("email").value = localStorage.getItem("email") || "";
-            document.getElementById("address").value = localStorage.getItem("address") || "";
-            document.getElementById("caste").value = localStorage.getItem("caste") || "";
-            document.getElementById("patrilinealGotra").value = localStorage.getItem("patrilinealGotra") || "";
-            document.getElementById("matrilinealGotra").value = localStorage.getItem("matrilinealGotra") || "";
-            document.getElementById("manglik").value = localStorage.getItem("manglik") || "";
-            let languagesKnown = JSON.parse(localStorage.getItem("languageKnown")) || [];
-            document.querySelectorAll("#language-known option").forEach(option => {
-                option.selected = languagesKnown.includes(option.value);
-            });
-            document.getElementById("height").value = localStorage.getItem("height") || "";
-            document.getElementById("weight").value = localStorage.getItem("weight") || "";
-            document.getElementById("complexion").value = localStorage.getItem("complexion") || "";
-            document.getElementById("qualification").value = localStorage.getItem("qualification") || "";
-            document.getElementById("occupation").value = localStorage.getItem("occupation") || "";
-            document.getElementById("siblingsDetail").value = localStorage.getItem("siblingsDetail") || "";
-            var photoData = localStorage.getItem('photoData');
-            var preview = document.getElementById('photoPreview');
-            preview.src = photoData;
-            document.getElementById("aboutMyself").value = localStorage.getItem("aboutMyself") || "";
-            document.getElementById("expectations").value = localStorage.getItem("expectations") || "";
+<script>
+    function scrollToForm() {
+        document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+<script>
+
+    function populate() {
+        document.getElementById("salutation").value = localStorage.getItem("salutation") || "";
+        document.getElementById("name").value = localStorage.getItem("name") || "";
+        document.getElementById("fatherName").value = localStorage.getItem("fatherName") || "";
+        document.getElementById("fatherOccupation").value = localStorage.getItem("fatherOccupation") || "";
+        document.getElementById("motherName").value = localStorage.getItem("motherName") || "";
+        document.getElementById("motherOccupation").value = localStorage.getItem("motherOccupation") || "";
+        document.getElementById("dob").value = localStorage.getItem("dob") || "";
+        document.getElementById("placeOfBirth").value = localStorage.getItem("placeOfBirth") || "";
+        document.getElementById("timeOfBirth").value = localStorage.getItem("timeOfBirth") || "";
+        document.getElementById("mobileNo").value = localStorage.getItem("mobileNo") || "";
+        document.getElementById("email").value = localStorage.getItem("email") || "";
+        document.getElementById("address").value = localStorage.getItem("address") || "";
+        document.getElementById("caste").value = localStorage.getItem("caste") || "";
+        document.getElementById("patrilinealGotra").value = localStorage.getItem("patrilinealGotra") || "";
+        document.getElementById("matrilinealGotra").value = localStorage.getItem("matrilinealGotra") || "";
+        document.getElementById("manglik").value = localStorage.getItem("manglik") || "";
+        let languagesKnown = JSON.parse(localStorage.getItem("languageKnown")) || [];
+        document.querySelectorAll("#language-known option").forEach(option => {
+            option.selected = languagesKnown.includes(option.value);
+        });
+        document.getElementById("height").value = localStorage.getItem("height") || "";
+        document.getElementById("weight").value = localStorage.getItem("weight") || "";
+        document.getElementById("complexion").value = localStorage.getItem("complexion") || "";
+        document.getElementById("qualification").value = localStorage.getItem("qualification") || "";
+        document.getElementById("occupation").value = localStorage.getItem("occupation") || "";
+        document.getElementById("siblingsDetail").value = localStorage.getItem("siblingsDetail") || "";
+        var photoData = localStorage.getItem('photoData');
+        var preview = document.getElementById('photoPreview');
+        preview.src = photoData;
+        document.getElementById("aboutMyself").value = localStorage.getItem("aboutMyself") || "";
+        document.getElementById("expectations").value = localStorage.getItem("expectations") || "";
+    }
+
+
+
+    // Store data in localStorage on form submit
+    function storeData() {
+        const formFields = [
+            "salutation",
+            "name",
+            "fatherName",
+            "fatherOccupation",
+            "motherName",
+            "motherOccupation",
+            "dob",
+            "placeOfBirth",
+            "timeOfBirth",
+            "mobileNo",
+            "email",
+            "address",
+            "caste",
+            "patrilinealGotra",
+            "matrilinealGotra",
+            "manglik",
+            "languageKnown",
+            "height",
+            "weight",
+            "complexion",
+            "qualification",
+            "occupation",
+            "siblingsDetail",
+            "hobbies",
+            "preview",
+            "aboutMyself",
+            "expectations"
+        ];
+
+        formFields.forEach(field => {
+            const value = document.getElementById(field)?.value || '';
+            localStorage.setItem(field, value);
+        });
+
+        const selectedLanguages = Array.from(document.getElementById("languageKnown")?.selectedOptions || []).map(option => option.value);
+        localStorage.setItem("languageKnown", JSON.stringify(selectedLanguages));
+
+        const selectedHobbies = Array.from(document.getElementById("hobbies")?.selectedOptions || []).map(option => option.value);
+        localStorage.setItem("hobbies", JSON.stringify(selectedHobbies));
+
+    }
+
+    // Generate PDF
+    function generatePDF() {
+        const doc = new jsPDF();
+
+        // Add image to top right corner of PDF
+        const imgData = localStorage.getItem("photoData");
+        doc.addImage(imgData, "JPEG", 145, 10, 50, 50);
+
+        // Add remaining biodata fields to PDF
+        doc.setFont("helvetica");
+        doc.setFontSize(14);
+        doc.text(20, 20, "Salutation: " + localStorage.getItem("salutation"));
+        doc.text(20, 30, "Name: " + localStorage.getItem("name"));
+        doc.text(20, 40, "Father's Name: " + localStorage.getItem("fatherName"));
+        doc.text(20, 50, "Father's Occupation: " + localStorage.getItem("fatherOccupation"));
+        doc.text(20, 60, "Mother's Name: " + localStorage.getItem("motherName"));
+        doc.text(20, 70, "Mother's Occupation: " + localStorage.getItem("motherOccupation"));
+        doc.text(20, 80, "Date of Birth: " + localStorage.getItem("dob"));
+        doc.text(20, 90, "Place of Birth: " + localStorage.getItem("placeOfBirth"));
+        doc.text(20, 100, "Time of Birth: " + localStorage.getItem("timeOfBirth"));
+        doc.text(20, 110, "Mobile Number: " + localStorage.getItem("mobileNo"));
+        doc.text(20, 120, "Email: " + localStorage.getItem("email"));
+        doc.text(20, 130, "Address: " + localStorage.getItem("address"));
+        doc.text(20, 140, "Caste: " + localStorage.getItem("caste"));
+        doc.text(20, 150, "Patrilineal Gotra: " + localStorage.getItem("patrilinealGotra"));
+        doc.text(20, 160, "Matrilineal Gotra: " + localStorage.getItem("matrilinealGotra"));
+        doc.text(20, 170, "Manglik: " + localStorage.getItem("manglik"));
+        doc.text(20, 180, "Languages Known: " + JSON.parse(localStorage.getItem("languageKnown") ? localStorage.getItem("languageKnown") : []).join(", ")); 
+        doc.text(20, 190, "Height: " + localStorage.getItem("height"));
+        doc.text(20, 200, "Weight: " + localStorage.getItem("weight"));
+        doc.text(20, 210, "Complexion: " + localStorage.getItem("complexion"));
+        doc.text(20, 220, "Qualification: " + localStorage.getItem("qualification"));
+        doc.text(20, 230, "Occupation: " + localStorage.getItem("occupation"));
+        doc.text(20, 240, "Siblings Detail: " + localStorage.getItem("siblingsDetail"));
+        // doc.addPage();
+        doc.text(20, 250, "Hobbies: " + JSON.parse(localStorage.getItem("hobbies") ? localStorage.getItem("hobbies") : []).join(", "));
+        doc.text(20, 260, "About Myself: " + localStorage.getItem("aboutMyself"));
+        doc.text(20, 270, "Expectations: " + localStorage.getItem("expectations"));
+
+        // Save PDF
+        // doc.save("biodata.pdf");
+
+        const pdfData = doc.output("dataurl");
+
+        // Create a button to trigger the popup
+        const button = document.createElement('button');
+        button.textContent = 'Click to save PDF';
+        button.className = 'form-control-sm';
+        // Get the form element by its ID
+        // const myForm = document.getElementById('biodataForm');
+        const generatePDFButton = document.getElementById('generatePDFButton');
+        button.addEventListener('click', function () {
+            // Open a new window or modal to display the PDF
+            // const popupWindow = window.open();
+            // popupWindow.document.write('<iframe width="100%" height="100%" src="' + pdfData + '"></iframe>');
+            // window.open(pdfData, '_blank');
+            var filename = (localStorage.getItem("name") + '-Indian-biodata-in' || "biodata");
+            doc.save(filename + ".pdf");
+        });
+
+        // Insert the new button after the button with id "generatePDFButton"
+        generatePDFButton.insertAdjacentElement('afterend', button);
+
+    }
+
+
+    function previewFile() {
+        const preview = document.querySelector("img");
+        const file = document.querySelector("input[type=file]").files[0];
+        const reader = new FileReader();
+
+        reader.addEventListener(
+            "load",
+            () => {
+                // Load image on selection UI
+                preview.src = reader.result;
+                // Store image data in localStorage
+                localStorage.setItem("photoData", reader.result);
+            },
+            false
+        );
+
+        if (file) {
+            reader.readAsDataURL(file);
         }
+    }
+
+    // Call populate() method on page initialization
+    window.onload = function () {
+        populate();
+        window.jsPDF = window.jspdf.jsPDF;
+    };
 
 
+</script>
 
-        // Store data in localStorage on form submit
-        function storeData() {
-            const formFields = [
-                "salutation",
-                "name",
-                "fatherName",
-                "fatherOccupation",
-                "motherName",
-                "motherOccupation",
-                "dob",
-                "placeOfBirth",
-                "timeOfBirth",
-                "mobileNo",
-                "email",
-                "address",
-                "caste",
-                "patrilinealGotra",
-                "matrilinealGotra",
-                "manglik",
-                "languageKnown",
-                "height",
-                "weight",
-                "complexion",
-                "qualification",
-                "occupation",
-                "siblingsDetail",
-                "hobbies",
-                "preview",
-                "aboutMyself",
-                "expectations"
-            ];
-
-            formFields.forEach(field => {
-                const value = document.getElementById(field)?.value || '';
-                localStorage.setItem(field, value);
-            });
-
-            const selectedLanguages = Array.from(document.getElementById("languageKnown")?.selectedOptions || []).map(option => option.value);
-            localStorage.setItem("languageKnown", JSON.stringify(selectedLanguages));
-
-            const selectedHobbies = Array.from(document.getElementById("hobbies")?.selectedOptions || []).map(option => option.value);
-            localStorage.setItem("hobbies", JSON.stringify(selectedHobbies));
-
-        }
-
-        // Generate PDF
-        function generatePDF() {
-            const doc = new jsPDF();
-
-            // Add image to top right corner of PDF
-            const imgData = localStorage.getItem("photoData");
-            doc.addImage(imgData, "JPEG", 145, 10, 50, 50);
-
-            // Add remaining biodata fields to PDF
-            doc.setFont("helvetica");
-            doc.setFontSize(14);
-            doc.text(20, 20, "Salutation: " + localStorage.getItem("salutation"));
-            doc.text(20, 30, "Name: " + localStorage.getItem("name"));
-            doc.text(20, 40, "Father's Name: " + localStorage.getItem("fatherName"));
-            doc.text(20, 50, "Father's Occupation: " + localStorage.getItem("fatherOccupation"));
-            doc.text(20, 60, "Mother's Name: " + localStorage.getItem("motherName"));
-            doc.text(20, 70, "Mother's Occupation: " + localStorage.getItem("motherOccupation"));
-            doc.text(20, 80, "Date of Birth: " + localStorage.getItem("dob"));
-            doc.text(20, 90, "Place of Birth: " + localStorage.getItem("placeOfBirth"));
-            doc.text(20, 100, "Time of Birth: " + localStorage.getItem("timeOfBirth"));
-            doc.text(20, 110, "Mobile Number: " + localStorage.getItem("mobileNo"));
-            doc.text(20, 120, "Email: " + localStorage.getItem("email"));
-            doc.text(20, 130, "Address: " + localStorage.getItem("address"));
-            doc.text(20, 140, "Caste: " + localStorage.getItem("caste"));
-            doc.text(20, 150, "Patrilineal Gotra: " + localStorage.getItem("patrilinealGotra"));
-            doc.text(20, 160, "Matrilineal Gotra: " + localStorage.getItem("matrilinealGotra"));
-            doc.text(20, 170, "Manglik: " + localStorage.getItem("manglik"));
-            doc.text(20, 180, "Languages Known: " + JSON.parse(localStorage.getItem("languageKnown") ? localStorage.getItem("languageKnown") : []).join(", ")); 
-            doc.text(20, 190, "Height: " + localStorage.getItem("height"));
-            doc.text(20, 200, "Weight: " + localStorage.getItem("weight"));
-            doc.text(20, 210, "Complexion: " + localStorage.getItem("complexion"));
-            doc.text(20, 220, "Qualification: " + localStorage.getItem("qualification"));
-            doc.text(20, 230, "Occupation: " + localStorage.getItem("occupation"));
-            doc.text(20, 240, "Siblings Detail: " + localStorage.getItem("siblingsDetail"));
-            // doc.addPage();
-            doc.text(20, 250, "Hobbies: " + JSON.parse(localStorage.getItem("hobbies") ? localStorage.getItem("hobbies") : []).join(", "));
-            doc.text(20, 260, "About Myself: " + localStorage.getItem("aboutMyself"));
-            doc.text(20, 270, "Expectations: " + localStorage.getItem("expectations"));
-
-            // Save PDF
-            // doc.save("biodata.pdf");
-
-            const pdfData = doc.output("dataurl");
-
-            // Create a button to trigger the popup
-            const button = document.createElement('button');
-            button.textContent = 'Open PDF';
-            button.className = 'form-control-sm';
-            // Get the form element by its ID
-            // const myForm = document.getElementById('biodataForm');
-            const generatePDFButton = document.getElementById('generatePDFButton');
-            button.addEventListener('click', function () {
-                // Open a new window or modal to display the PDF
-                // const popupWindow = window.open();
-                // popupWindow.document.write('<iframe width="100%" height="100%" src="' + pdfData + '"></iframe>');
-                // window.open(pdfData, '_blank');
-                doc.save("biodata.pdf");
-            });
-
-            // Insert the new button after the button with id "generatePDFButton"
-            generatePDFButton.insertAdjacentElement('afterend', button);
-
-        }
-
-
-        function previewFile() {
-            const preview = document.querySelector("img");
-            const file = document.querySelector("input[type=file]").files[0];
-            const reader = new FileReader();
-
-            reader.addEventListener(
-                "load",
-                () => {
-                    // Load image on selection UI
-                    preview.src = reader.result;
-                    // Store image data in localStorage
-                    localStorage.setItem("photoData", reader.result);
-                },
-                false
-            );
-
-            if (file) {
-                reader.readAsDataURL(file);
-            }
-        }
-
-        // Call populate() method on page initialization
-        window.onload = function () {
-            populate();
-            window.jsPDF = window.jspdf.jsPDF;
-        };
-
-
-    </script>
 </body>
 </html>
