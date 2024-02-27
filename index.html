@@ -197,7 +197,7 @@
 
 <div class="sidebar">
     <div class="section1">
-        <div class="centered-content">
+        <div class="centered-content" id="side-bar-heading">
             <span><h1>Indian Biodata</h1></span>
         </div>
     </div>
@@ -232,7 +232,7 @@
         <!-- This is the core part of the website -->
         <div class="container-fluid text-center">
             <br>
-            <h1>Indian Biodata Creator</h1>
+            <h1 id="form-heading-text">Indian Biodata Creator</h1>
             <div class=">
                 <div class="col-12 form-container">
                     <form id="biodataForm"><br>
@@ -710,6 +710,8 @@
         // Override the text of the <h1> tag with the value of the 'community' parameter
         const h1Element = document.querySelector('h1');
         h1Element.textContent = community.charAt(0).toUpperCase() + community.slice(1) + ' Biodata';
+        const formHeadingText = document.getElementById("form-heading-text");
+        formHeadingText.textContent = community.charAt(0).toUpperCase() + community.slice(1) + ' Biodata Creator | Indian Biodata';
     }
 </script>
 
