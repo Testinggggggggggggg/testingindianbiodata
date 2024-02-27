@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <script>
+        // Function to extract parameters from the URL
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
+
+        // Redirect function
+        function redirect() {
+            // Extract the community parameter from the URL
+            var community = getUrlParameter('community');
+            // Construct the redirect URL
+            var redirectUrl = self.location.origin + '?title=shaadi';
+            // Append the community parameter to the redirect URL if it exists
+            if (community) {
+                redirectUrl += '&community=' + community;
+            }
+            // Redirect to the new URL
+            window.location.href = redirectUrl;
+        }
+
+        // Call the redirect function when the page loads
+        window.onload = redirect;
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, <a href="https://indianbiodata.in?title=shaadi">click here</a>.</p>
+</body>
+</html>
